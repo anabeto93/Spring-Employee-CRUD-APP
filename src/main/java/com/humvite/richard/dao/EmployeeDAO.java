@@ -51,6 +51,6 @@ public class EmployeeDAO {
                 () -> new ResourceNotFoundException("Employee id '" + id + "' does no exist")
         );
 
-        employeeRepository.deleteById(id);
+        employeeRepository.delete(employee);
     }
 }
